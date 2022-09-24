@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "attributes": {
+            "Title": "Node js",
+            "Slug": "node-js"
+        }
+    },
+    {
+        "id": 2,
+        "attributes": {
+            "Title": "React js",
+            "Slug": "react-js"
+        }
+    },
+    {
+        "id": 3,
+        "attributes": {
+            "Title": "Typescript",
+            "Slug": "ts"
+        }
+    }
+]
