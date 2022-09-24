@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import articles from "../../json/articles.json";
 import { IArticle } from "../../types";
 
-export default (req: NextApiRequest, res: NextApiResponse<IArticle>) => {
+const handler = (req: NextApiRequest, res: NextApiResponse<IArticle>) => {
 
     const { slug } = req.query
 
@@ -13,3 +13,5 @@ export default (req: NextApiRequest, res: NextApiResponse<IArticle>) => {
     return res.status(200).json(article)
 
 }
+
+export default handler

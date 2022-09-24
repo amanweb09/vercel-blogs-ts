@@ -1,5 +1,5 @@
 import { AxiosResponse } from "axios";
-import type { GetServerSideProps, GetStaticProps, NextPage } from "next";
+import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import BlogCard from "../../components/BlogCard";

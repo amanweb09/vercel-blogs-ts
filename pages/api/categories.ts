@@ -3,7 +3,7 @@ import { ICategory, ICollectionResponse } from "../../types";
 import categories from '../../json/categories.json'
 
 
-export default (
+const handler = (
   req: NextApiRequest,
   res: NextApiResponse<ICollectionResponse<ICategory>[]>
 ) => {
@@ -11,3 +11,5 @@ export default (
   return res.status(200).json(categories)
 
 }
+
+export default handler

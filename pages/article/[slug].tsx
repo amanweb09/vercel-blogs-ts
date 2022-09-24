@@ -3,12 +3,13 @@ import { GetServerSideProps } from "next";
 import Link from "next/link";
 import { fetchArticleBySlug } from "../../http";
 import { IArticle } from "../../types";
+import type { NextPage } from 'next'
 
 interface IPropTypes {
     article: IArticle
 }
 
-const Slug = ({ article }: IPropTypes) => {
+const Slug: NextPage<IPropTypes> = ({ article }) => {
 
     return (
         <div className="px-4 sm:px-0">

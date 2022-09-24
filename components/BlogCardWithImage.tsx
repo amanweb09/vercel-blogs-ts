@@ -18,7 +18,8 @@ const BlogCardWithImage = ({ article }: IPropType) => {
             <Image
                 height={100}
                 width={100}
-                src={'/vercel.svg'} />
+                src={'/vercel.svg'}
+                alt="logo" />
         </div>
     );
 }
