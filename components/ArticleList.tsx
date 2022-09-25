@@ -13,7 +13,7 @@ const ArticleList = ({ articles }: IPropType) => {
                 articles.map((article, idx) => {
                     return (
                         idx === 1 ?
-                            <BlogCardWithImage article={article} />
+                            <BlogCardWithImage key={article.id} article={article} />
                             :
                             <BlogCard key={article.id} article={article} />
                     )

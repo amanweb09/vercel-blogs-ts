@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from 'next'
+import type { GetStaticProps, NextPage, GetServerSideProps } from 'next'
 import Head from 'next/head'
 import { fetchArticles, fetchCategories } from '../http'
 import { AxiosResponse } from 'axios'
@@ -44,7 +44,7 @@ const Home: NextPage<IPropTypes> = ({ categories, articles }) => {  //all prop t
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
 
   const { data: categories }: AxiosResponse<ICollectionResponse<ICategory[]>> = await fetchCategories()
   const { data: articles }: AxiosResponse<ICollectionResponse<IArticle[]>> = await fetchArticles()
